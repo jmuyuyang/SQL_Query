@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("query", "for query support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("query", "enable query support", "no");
+
+if (PHP_QUERY != "no") {
+	EXTENSION("query", "query.c");
+}
+
